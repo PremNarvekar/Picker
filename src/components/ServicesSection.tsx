@@ -17,7 +17,7 @@ export default function ServicesSection() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6"
           >
-            Premium <span className="text-primary">Services</span>
+            Premium <span className="text-primary italic">Services</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

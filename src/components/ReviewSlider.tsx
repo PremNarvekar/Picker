@@ -56,7 +56,7 @@ export default function ReviewSlider() {
     <section className="py-32 px-6 md:px-12 bg-white overflow-hidden relative" id="reviews">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-20 text-center tracking-tight text-foreground">
-          Client <span className="text-primary">Stories</span>
+          Client <span className="text-primary italic">Stories</span>
         </h2>
 
         <div className="relative max-w-4xl mx-auto h-[400px] md:h-[300px] flex items-center justify-center">

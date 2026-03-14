@@ -51,9 +51,9 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 leading-[1.1]">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-gray-900 leading-[1.2]">
                 Global International <br />
-                <span className="text-primary">Packers And Movers</span>
+                <span className="text-primary italic">Packers And Movers</span>
               </h2>
               <div className="flex flex-wrap items-center gap-3 mb-8">
                 <div className="flex items-center bg-yellow-50 border border-yellow-100 px-3 py-1.5 rounded-full">

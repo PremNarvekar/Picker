@@ -57,7 +57,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
                <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground tracking-tight">
-                 A decade of <br/><span className="text-primary">excellence.</span>
+                 A decade of <br/><span className="text-primary italic">excellence.</span>
                </h2>
                <p className="text-xl text-gray-500 leading-relaxed mb-8">
                  Since our inception in 2014, we've completed over 50,000 successful moves across the nation, maintaining a 99.8% damage-free track record through specialized equipment and rigorous training programs.
