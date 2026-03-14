@@ -145,7 +145,7 @@ export default function HeroScrollSequence() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-center tracking-tighter leading-tight"
           >
             Global International Packers And Movers <br />
-            <span className="text-primary tracking-tight">Mumbai</span>
+            <span className="text-primary tracking-tight italic">Mumbai</span>
           </motion.h1>
           <motion.p 
             initial={{ y: 50, opacity: 0 }}
