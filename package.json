@@ -23,7 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
     "@next/eslint-plugin-next": "15.5.12",
-    "@types/node": "^20",
+    "@types/node": "latest",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
@@ -32,6 +32,7 @@
     "typescript": "^5"
   },
   "overrides": {
-    "@typescript-eslint/typescript-estree": "8.56.0"
+    "@typescript-eslint/typescript-estree": "8.56.0",
+    "@types/node": "latest"
   }
 }
