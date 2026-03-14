@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
-import { AnimatePresence } from "framer-motion";
 
 const outfit = Outfit({
   variable: "--font-outfit",

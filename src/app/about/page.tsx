@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CheckCircle2, TrendingUp, Users, Target } from "lucide-react";
 
 export const metadata = {
@@ -24,7 +23,7 @@ export default function AboutPage() {
             Setting the Standard in <span className="text-primary italic">Relocation.</span>
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed font-light">
-            Founded on the principle that moving shouldn't be stressful, Global International has redefined the relocation experience. We combine logistical expertise with uncompromising care.
+            Founded on the principle that moving shouldn&apos;t be stressful, Global International has redefined the relocation experience. We combine logistical expertise with uncompromising care.
           </p>
         </div>
 
@@ -60,7 +59,7 @@ export default function AboutPage() {
                  A decade of <br/><span className="text-primary italic">excellence.</span>
                </h2>
                <p className="text-xl text-gray-500 leading-relaxed mb-8">
-                 Since our inception in 2014, we've completed over 50,000 successful moves across the nation, maintaining a 99.8% damage-free track record through specialized equipment and rigorous training programs.
+                 Since our inception in 2014, we&apos;ve completed over 50,000 successful moves across the nation, maintaining a 99.8% damage-free track record through specialized equipment and rigorous training programs.
                </p>
                <div className="grid grid-cols-2 gap-8 mt-12">
                  <div>

@@ -1,10 +1,10 @@
-import { Truck, Building, Car, Package, Warehouse } from "lucide-react";
+import { Truck, Building, Car, Package, Warehouse, LucideIcon } from "lucide-react";
 
 export interface Service {
   id: string;
   title: string;
   description: string;
-  icon: any; // Using Lucide icons
+  icon: LucideIcon;
 }
 
 export const services: Service[] = [

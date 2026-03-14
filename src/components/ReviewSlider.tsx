@@ -75,7 +75,7 @@ export default function ReviewSlider() {
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={1}
-              onDragEnd={(_e: any, { offset, velocity }: any) => {
+              onDragEnd={(_e: unknown, { offset, velocity }: { offset: { x: number }; velocity: { x: number } }) => {
                 const swipe = swipePower(offset.x, velocity.x);
                 if (swipe < -swipeConfidenceThreshold) {
                   slideRight();
@@ -96,7 +96,7 @@ export default function ReviewSlider() {
                     ))}
                   </div>
                   <p className="text-xl md:text-2xl font-light text-foreground leading-relaxed mb-8">
-                    "{reviews[index].content}"
+                    &ldquo;{reviews[index].content}&rdquo;
                   </p>
                   <div>
                     <h4 className="font-bold text-lg text-foreground">{reviews[index].name}</h4>
