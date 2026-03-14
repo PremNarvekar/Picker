@@ -19,9 +19,9 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const { name, phone, movingFrom, movingTo, date } = formData;
-    
+
     const message = `*New Moving Inquiry*
     
 *Name:* ${name}
@@ -33,16 +33,16 @@ export default function ContactSection() {
 Hi Global International, I would like to get a quote for my upcoming move.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "918816903044"; 
-    
+    const whatsappNumber = "918816903044";
+
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
   };
 
   return (
-    <section className="py-32 px-6 md:px-12 bg-gray-50 relative overflow-hidden" id="contact">
+    <section className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-gray-50 relative overflow-hidden" id="contact">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-16 items-center max-w-6xl mx-auto">
-          
+        <div className="flex flex-col lg:flex-row gap-12 md:gap-16 items-center max-w-6xl mx-auto">
+
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <motion.div
@@ -66,12 +66,12 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                 <span className="text-gray-300 hidden sm:inline">•</span>
                 <span className="bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-sm font-bold uppercase tracking-tight">Packaging Company</span>
               </div>
-              
+
               <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-normal">
                 Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.
               </p>
-              
-              <div className="space-y-6 mb-12">
+
+              <div className="space-y-6 mb-10">
                 <div className="flex items-center gap-4 text-gray-600 group">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                     <Phone size={24} />
@@ -79,9 +79,9 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                   <div className="flex-1">
                     <h4 className="font-semibold text-foreground flex items-center gap-2">
                       Call Us Directly
-                      <a 
-                        href="https://wa.me/918816903044" 
-                        target="_blank" 
+                      <a
+                        href="https://wa.me/918816903044"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-green-500 hover:text-green-600 transition-colors"
                         title="Chat on WhatsApp"
@@ -117,8 +117,8 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
 
               {/* Action Buttons */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Shiv+Krupa+Main+Gate+Rd+Powai+Mumbai"
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Shiv+Krupa,+Main+Gate+Rd,+Powai+Hospital,+IIT+Bombay,+Mumbai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
@@ -128,7 +128,7 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                   </div>
                   <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Directions</span>
                 </a>
-                <button 
+                <button
                   onClick={() => alert('Bookmarked!')}
                   className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
                 >
@@ -137,7 +137,7 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                   </div>
                   <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Save</span>
                 </button>
-                <button 
+                <button
                   onClick={() => {
                     if (navigator.share) {
                       navigator.share({ title: 'Global International Packers And Movers', url: window.location.href });
@@ -153,7 +153,7 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                   </div>
                   <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Share</span>
                 </button>
-                <button 
+                <button
                   onClick={() => {
                     navigator.clipboard.writeText('+91 88169 03044');
                     alert('Phone number copied!');
@@ -182,7 +182,7 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
 
               <h3 className="text-2xl font-bold mb-8 text-foreground">Get a free quote</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="relative">
@@ -191,14 +191,14 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                         <User size={18} />
                       </div>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         name="name"
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium" 
-                        placeholder="John Doe" 
+                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium"
+                        placeholder="John Doe"
                       />
                     </div>
                   </div>
@@ -208,14 +208,14 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                         <Phone size={18} />
                       </div>
-                      <input 
-                        type="tel" 
+                      <input
+                        type="tel"
                         name="phone"
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium" 
-                        placeholder="+1 (555) 000-0000" 
+                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium"
+                        placeholder="+1 (555) 000-0000"
                       />
                     </div>
                   </div>
@@ -228,14 +228,14 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                         <MapPin size={18} />
                       </div>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         name="movingFrom"
                         required
                         value={formData.movingFrom}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium" 
-                        placeholder="Current Zip / City" 
+                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium"
+                        placeholder="Current Zip / City"
                       />
                     </div>
                   </div>
@@ -245,14 +245,14 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                         <MapPin size={18} />
                       </div>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         name="movingTo"
                         required
                         value={formData.movingTo}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium" 
-                        placeholder="Destination Zip / City" 
+                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium"
+                        placeholder="Destination Zip / City"
                       />
                     </div>
                   </div>
@@ -264,18 +264,18 @@ Hi Global International, I would like to get a quote for my upcoming move.`;
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                       <Calendar size={18} />
                     </div>
-                    <input 
-                      type="date" 
+                    <input
+                      type="date"
                       name="date"
                       required
                       value={formData.date}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium" 
+                      className="w-full pl-12 pr-4 py-4 bg-gray-50 border-none rounded-xl focus:bg-white focus:ring-2 focus:ring-primary/20 transition-all outline-none text-foreground font-medium"
                     />
                   </div>
                 </div>
 
-                <button 
+                <button
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 group transition-colors shadow-md"
                 >
