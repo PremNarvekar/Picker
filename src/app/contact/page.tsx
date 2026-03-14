@@ -1,9 +1,9 @@
-export const metadata = {
-  title: "Contact Us | Picker Packer",
-  description: "Get a quote for your next move instantly.",
-};
-
 import ContactSection from "@/components/ContactSection";
+
+export const metadata = {
+  title: "Contact Us | Global International Packers And Movers",
+  description: "Get a quote for your next move instantly in Mumbai.",
+};
 
 export default function ContactPage() {
   return (

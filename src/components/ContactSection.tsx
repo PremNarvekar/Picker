@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Phone, User, ArrowRight } from "lucide-react";
+import { MapPin, Calendar, Phone, User, ArrowRight, Star, Share2, Bookmark, Copy, ExternalLink, MessageCircle } from "lucide-react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -30,10 +30,10 @@ export default function ContactSection() {
 *To:* ${movingTo}
 *Date:* ${date}
 
-Hi Picker Packer, I would like to get a quote for my upcoming move.`;
+Hi Global International, I would like to get a quote for my upcoming move.`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "1234567890"; // In a real app, use the actual business number
+    const whatsappNumber = "918816903044"; 
     
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
   };
@@ -51,33 +51,120 @@ Hi Picker Packer, I would like to get a quote for my upcoming move.`;
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-foreground">
-                Ready to make <br />
-                <span className="text-primary italic">your move?</span>
+              <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 leading-[1.1]">
+                Global International <br />
+                <span className="text-primary">Packers And Movers</span>
               </h2>
-              <p className="text-xl text-gray-500 mb-10 leading-relaxed font-light">
-                Fill out the form with your moving details, and our team will get back to you instantly via WhatsApp with a customized quote.
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                <div className="flex items-center bg-yellow-50 border border-yellow-100 px-3 py-1.5 rounded-full">
+                  <span className="text-yellow-700 font-bold mr-1.5">4.7</span>
+                  <div className="flex gap-0.5 text-yellow-500">
+                    <Star size={14} className="fill-current" />
+                  </div>
+                  <span className="text-yellow-800 text-sm ml-2 font-semibold"> (105 Reviews)</span>
+                </div>
+                <span className="text-gray-300 hidden sm:inline">•</span>
+                <span className="bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-sm font-bold uppercase tracking-tight">Packaging Company</span>
+              </div>
+              
+              <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed font-normal">
+                Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.
               </p>
               
-              <div className="space-y-6">
-                <div className="flex items-center gap-4 text-gray-600">
-                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+              <div className="space-y-6 mb-12">
+                <div className="flex items-center gap-4 text-gray-600 group">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                     <Phone size={24} />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground">Call Us Directly</h4>
-                    <p>+1 (555) 123-4567</p>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-foreground flex items-center gap-2">
+                      Call Us Directly
+                      <a 
+                        href="https://wa.me/918816903044" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-green-500 hover:text-green-600 transition-colors"
+                        title="Chat on WhatsApp"
+                      >
+                        <MessageCircle size={20} className="fill-current" />
+                      </a>
+                    </h4>
+                    <p className="font-medium text-lg">+91 88169 03044</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 text-gray-600">
-                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+                <div className="flex items-center gap-4 text-gray-600 group">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                     <MapPin size={24} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Headquarters</h4>
-                    <p>123 Packer Lane, Suite 100, NY 10001</p>
+                    <p className="max-w-xs text-sm leading-relaxed">
+                      Bldg first floor 103, Shiv Krupa, Main Gate Rd, near Powai Hospital, opp. IIT Bombay, Gokhale Nagar, Tirandaz, Powai, Mumbai, Maharashtra 400072
+                    </p>
+                    <p className="text-xs text-primary mt-1 font-semibold">4WG9+4H Mumbai, Maharashtra</p>
                   </div>
                 </div>
+                <div className="flex items-center gap-4 text-gray-600">
+                  <div className="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600">
+                    <Calendar size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Business Status</h4>
+                    <p className="text-emerald-600 font-bold text-sm">Open <span className="text-gray-400 font-normal">· Closes 11:30 PM</span></p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Shiv+Krupa+Main+Gate+Rd+Powai+Mumbai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-blue-50 text-primary flex items-center justify-center mb-2 group-hover:bg-primary group-hover:text-white transition-all">
+                    <ExternalLink size={20} />
+                  </div>
+                  <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Directions</span>
+                </a>
+                <button 
+                  onClick={() => alert('Bookmarked!')}
+                  className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-blue-50 text-primary flex items-center justify-center mb-2 group-hover:bg-primary group-hover:text-white transition-all">
+                    <Bookmark size={20} />
+                  </div>
+                  <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Save</span>
+                </button>
+                <button 
+                  onClick={() => {
+                    if (navigator.share) {
+                      navigator.share({ title: 'Global International Packers And Movers', url: window.location.href });
+                    } else {
+                      navigator.clipboard.writeText(window.location.href);
+                      alert('Link copied!');
+                    }
+                  }}
+                  className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-blue-50 text-primary flex items-center justify-center mb-2 group-hover:bg-primary group-hover:text-white transition-all">
+                    <Share2 size={20} />
+                  </div>
+                  <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Share</span>
+                </button>
+                <button 
+                  onClick={() => {
+                    navigator.clipboard.writeText('+91 88169 03044');
+                    alert('Phone number copied!');
+                  }}
+                  className="flex flex-col items-center justify-center p-4 rounded-2xl bg-white border border-gray-100 hover:border-primary/20 hover:bg-blue-50/30 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-blue-50 text-primary flex items-center justify-center mb-2 group-hover:bg-primary group-hover:text-white transition-all">
+                    <Copy size={20} />
+                  </div>
+                  <span className="text-xs font-bold text-gray-600 group-hover:text-primary">Send to Phone</span>
+                </button>
               </div>
             </motion.div>
           </div>

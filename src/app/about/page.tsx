@@ -1,11 +1,10 @@
-export const metadata = {
-  title: "About Us | Picker Packer",
-  description: "Learn more about Picker Packer, the premium moving service.",
-};
-
 import Image from "next/image";
 import { CheckCircle2, TrendingUp, Users, Target } from "lucide-react";
-import { motion } from "framer-motion";
+
+export const metadata = {
+  title: "About Us | Global International Packers And Movers",
+  description: "Learn more about Global International, your professional moving partner in Mumbai.",
+};
 
 export default function AboutPage() {
   const values = [
@@ -25,7 +24,7 @@ export default function AboutPage() {
             Setting the Standard in <span className="text-primary italic">Relocation.</span>
           </h1>
           <p className="text-xl text-gray-500 leading-relaxed font-light">
-            Founded on the principle that moving shouldn't be stressful, Picker Packer has redefined the relocation experience. We combine logistical expertise with uncompromising care.
+            Founded on the principle that moving shouldn't be stressful, Global International has redefined the relocation experience. We combine logistical expertise with uncompromising care.
           </p>
         </div>
 

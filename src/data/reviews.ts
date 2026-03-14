@@ -11,7 +11,7 @@ export const reviews: Review[] = [
     id: 1,
     name: "Sarah Jenkins",
     role: "Home Relocation",
-    content: "Picker Packer made our house move completely stress-free. The team was punctual, handled our fragile items with immense care, and finished ahead of schedule. Truly premium service.",
+    content: "Global International made our house move completely stress-free. The team was punctual, handled our fragile items with immense care, and finished ahead of schedule. Truly premium service.",
     rating: 5,
   },
   {

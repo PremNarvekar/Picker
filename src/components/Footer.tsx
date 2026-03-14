@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 text-2xl font-bold tracking-tight text-primary mb-4">
               <Package className="w-8 h-8 text-accent" />
-              Picker Packer<span className="text-accent">.</span>
+              Global International<span className="text-accent">.</span>
             </Link>
             <p className="text-gray-500 max-w-sm mt-4 text-sm leading-relaxed">
-              Premium, careful, and stress-free moving services. We deliver your precious belongings to their destination intact and on time.
+              Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.
             </p>
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-xs justify-center text-gray-400">
-          <p>© {new Date().getFullYear()} Picker Packer. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Global International Packers And Movers. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-4">
             <span>Powered by Next.js</span>
             <span>Made with Care</span>

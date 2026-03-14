@@ -1,39 +1,18 @@
-export const metadata = {
-  title: "Locations | Picker Packer",
-  description: "View our coverage map and regional service centers.",
-};
-
 import { MapPin, Phone, Mail } from "lucide-react";
+
+export const metadata = {
+  title: "Locations | Global International Packers And Movers",
+  description: "View our coverage map and regional service centers in Mumbai.",
+};
 
 export default function LocationsPage() {
   const locations = [
     {
-      city: "New York Hub (HQ)",
-      address: "123 Packer Lane, Suite 100",
-      region: "NY 10001",
-      phone: "+1 (555) 123-4567",
-      email: "ny@pickerpacker.com"
-    },
-    {
-      city: "Los Angeles Branch",
-      address: "4500 Sunset Blvd",
-      region: "CA 90027",
-      phone: "+1 (555) 987-6543",
-      email: "la@pickerpacker.com"
-    },
-    {
-      city: "Chicago Center",
-      address: "200 W Jackson Blvd",
-      region: "IL 60606",
-      phone: "+1 (555) 555-0199",
-      email: "chi@pickerpacker.com"
-    },
-    {
-      city: "Miami Operations",
-      address: "1000 Brickell Ave",
-      region: "FL 33131",
-      phone: "+1 (555) 222-3344",
-      email: "mia@pickerpacker.com"
+      city: "Mumbai Headquarters",
+      address: "Bldg first floor 103, Shiv Krupa, Main Gate Rd, near Powai Hospital, opp. IIT Bombay, Gokhale Nagar, Tirandaz",
+      region: "Powai, Mumbai, Maharashtra 400072",
+      phone: "+91 88169 03044",
+      email: "contact@globalinternational.com"
     }
   ];
 

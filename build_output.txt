@@ -1,0 +1,41 @@
+
+> picker-packer@0.1.0 build
+> next build
+
+   ▲ Next.js 15.1.7
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+   The following mandatory changes were made to your tsconfig.json:
+
+   	- jsx was set to preserve (next.js implements its own optimized jsx transform)
+
+ ⨯ ESLint: Cannot find module 'C:\Users\PREMNA~1\DOWNLO~1\Client\PICKER~2\Picker\node_modules\eslint-config-next\core-web-vitals' imported from C:\Users\PREMNA~1\DOWNLO~1\Client\PICKER~2\Picker\eslint.config.mjs Did you mean to import "eslint-config-next/core-web-vitals.js"?
+   Collecting page data ...
+   Generating static pages (0/10) ...
+   Generating static pages (2/10) 
+   Generating static pages (4/10) 
+   Generating static pages (7/10) 
+ ✓ Generating static pages (10/10)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    11.5 kB         163 kB
+├ ○ /_not-found                          145 B           106 kB
+├ ○ /about                               145 B           106 kB
+├ ○ /contact                             1.72 kB         150 kB
+├ ○ /faq                                 145 B           106 kB
+├ ○ /locations                           145 B           106 kB
+└ ○ /services                            2.77 kB         149 kB
++ First Load JS shared by all            105 kB
+  ├ chunks/4bd1b696-b83f0c1b0dc5f4df.js  52.9 kB
+  ├ chunks/517-922fc75827bb5a23.js       50.5 kB
+  └ other shared chunks (total)          1.98 kB
+
+
+○  (Static)  prerendered as static content
+

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -66,9 +66,9 @@ export default function Navbar() {
               <Package className="w-5 h-5 text-white" />
             </div>
             <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
-              useDarkText ? "text-foreground" : "text-white"
+              useDarkText ? "text-gray-900" : "text-white"
             }`}>
-              Picker Packer
+              Global International
             </span>
           </Link>
 
@@ -84,7 +84,7 @@ export default function Navbar() {
                     isActive
                       ? useDarkText ? "text-primary bg-blue-50" : "text-white bg-white/20"
                       : useDarkText
-                        ? "text-gray-600 hover:text-foreground hover:bg-gray-50"
+                        ? "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                         : "text-white/70 hover:text-white hover:bg-white/10"
                   }`}
                 >
@@ -100,7 +100,7 @@ export default function Navbar() {
             className={`hidden lg:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 group ${
               useDarkText
                 ? "bg-primary hover:bg-primary/90 text-white"
-                : "bg-white text-foreground hover:bg-white/90"
+                : "bg-white text-gray-900 hover:bg-white/90"
             }`}
           >
             Book Move
@@ -116,18 +116,18 @@ export default function Navbar() {
             <div className="w-6 flex flex-col justify-center items-center gap-[5px]">
               <span className={`block h-[2px] w-6 rounded-full transition-all duration-300 ${
                 mobileMenuOpen
-                  ? "rotate-45 translate-y-[7px] bg-foreground"
-                  : useDarkText ? "bg-foreground" : "bg-white"
+                  ? "rotate-45 translate-y-[7px] bg-gray-900"
+                  : useDarkText ? "bg-gray-900" : "bg-white"
               }`} />
               <span className={`block h-[2px] w-4 rounded-full transition-all duration-300 ${
                 mobileMenuOpen
                   ? "opacity-0 w-0"
-                  : useDarkText ? "bg-foreground" : "bg-white"
+                  : useDarkText ? "bg-gray-900" : "bg-white"
               }`} />
               <span className={`block h-[2px] w-6 rounded-full transition-all duration-300 ${
                 mobileMenuOpen
-                  ? "-rotate-45 -translate-y-[7px] bg-foreground"
-                  : useDarkText ? "bg-foreground" : "bg-white"
+                  ? "-rotate-45 -translate-y-[7px] bg-gray-900"
+                  : useDarkText ? "bg-gray-900" : "bg-white"
               }`} />
             </div>
           </button>
@@ -161,7 +161,7 @@ export default function Navbar() {
                           onClick={() => setMobileMenuOpen(false)}
                           href={link.href}
                           className={`block text-4xl font-bold py-3 tracking-tight transition-colors ${
-                            isActive ? "text-primary" : "text-foreground hover:text-primary"
+                            isActive ? "text-primary" : "text-gray-900 hover:text-primary"
                           }`}
                         >
                           {link.label}

@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Not Found | Picker Packer",
-  description: "Page not found.",
-};
-
 import Link from "next/link";
 import { Truck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Not Found | Global International Packers And Movers",
+  description: "Page not found.",
+};
 
 export default function NotFound() {
   return (

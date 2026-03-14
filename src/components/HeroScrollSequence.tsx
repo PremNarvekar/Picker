@@ -99,7 +99,7 @@ export default function HeroScrollSequence() {
       renderFrame(frameIndex.get());
     };
 
-    const unsubscribe = frameIndex.on("change", (latest) => {
+    const unsubscribe = frameIndex.on("change", (latest: number) => {
       renderFrame(latest);
     });
 
@@ -142,9 +142,10 @@ export default function HeroScrollSequence() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 md:mb-6 text-center tracking-tighter"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-center tracking-tighter leading-tight"
           >
-            Move With <br className="md:hidden" /><span className="text-primary tracking-tight">Precision.</span>
+            Global International Packers And Movers <br />
+            <span className="text-primary tracking-tight">Mumbai</span>
           </motion.h1>
           <motion.p 
             initial={{ y: 50, opacity: 0 }}

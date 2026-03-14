@@ -1,9 +1,9 @@
-export const metadata = {
-  title: "Services | Picker Packer",
-  description: "Explore our premium moving services.",
-};
-
 import ServicesSection from "@/components/ServicesSection";
+
+export const metadata = {
+  title: "Services | Global International Packers And Movers",
+  description: "Explore our premium moving services in Mumbai.",
+};
 
 export default function ServicesPage() {
   return (

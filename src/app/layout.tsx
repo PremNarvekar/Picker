@@ -10,19 +10,19 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Picker Packer | Premium Moving Services",
-  description: "High-end residential and commercial moving services. Experience a stress-free transition with Picker Packer.",
+  title: "Global International Packers And Movers | Packers And Movers In Mumbai",
+  description: "Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.",
   openGraph: {
-    title: "Picker Packer | Premium Moving Services",
-    description: "High-end residential and commercial moving services.",
+    title: "Global International Packers And Movers | Packers And Movers In Mumbai",
+    description: "Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.",
     type: "website",
     locale: "en_US",
-    siteName: "Picker Packer",
+    siteName: "Global International Packers And Movers",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Picker Packer | Premium Moving Services",
-    description: "High-end residential and commercial moving services.",
+    title: "Global International Packers And Movers | Packers And Movers In Mumbai",
+    description: "Professional Packers and Movers service in Mumbai offering safe shifting, packing, loading and transportation services near Powai and IIT Bombay.",
   }
 };
 

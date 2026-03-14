@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "FAQ | Picker Packer",
-  description: "Frequently Asked Questions about our moving services.",
+  title: "FAQ | Global International Packers And Movers",
+  description: "Frequently Asked Questions about our professional moving services in Mumbai.",
 };
 
 import { HelpCircle } from "lucide-react";
